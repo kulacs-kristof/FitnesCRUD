@@ -1,12 +1,12 @@
-import { FitnessNap } from "./fitness";
+import { FitnessNap } from "./fitness.ts";
 
 const napok = ["Hétfő", "Kedd", "Szerda", "Csütörtök", "Péntek", "Szombat", "Vasárnap"];
 const hetiAdatok: FitnessNap[] = napok.map(nap => new FitnessNap(nap));
 let aktNapIndex = 0;
-const celInput = document.getElementById("goal") as HTMLInputElement;
-const kaloriaInput = document.getElementById("burned") as HTMLInputElement;
-const hosszInput = document.getElementById("duration") as HTMLInputElement;
-const pihenoCheckbox = document.getElementById("restDay") as HTMLInputElement;
+//const celInput = document.getElementById("#kaloriacel") as HTMLInputElement;
+const kaloriaInput = document.getElementById("#egetett") as HTMLInputElement;
+const hosszInput = document.getElementById("#idotartam") as HTMLInputElement;
+const pihenoCheckbox = document.getElementById("#pihenonap") as HTMLInputElement;
 const kovetkezoGomb = document.querySelector("button.btn-primary") as HTMLButtonElement;
 const tablaBody = document.querySelector("tbody") as HTMLTableSectionElement;
 const progressBar = document.querySelector(".progress-bar") as HTMLElement;
