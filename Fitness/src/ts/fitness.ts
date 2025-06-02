@@ -4,7 +4,7 @@ export class FitnessNap {
   edzesHossz: number;
   pihenoNap: boolean;
   tevekenysegNev: string = "";
-  edzesIntenzitasErtek: number = 3; // ÚJ mező, alapértelmezett 3
+  edzesIntenzitasErtek: number = 3;
 
   constructor(napNeve: string) {
     this.napNeve = napNeve;

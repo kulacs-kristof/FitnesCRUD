@@ -54,6 +54,6 @@ function uritMezok() {
   hosszInput.value = "";
   pihenoCheckbox.checked = false;
   tevekenysegInput.value = "";
-  intenzitasInput.value = "3"; // ÚJ sor: visszaállít alapértelmezettre
-  document.getElementById('intenzitas-ertek')!.textContent = "3"; // ÚJ sor: kijelzés frissítése
+  intenzitasInput.value = "3";
+  document.getElementById('intenzitas-ertek')!.textContent = "3";
 }
