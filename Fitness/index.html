@@ -58,6 +58,28 @@
         </div>
       </div>
 
+      <div class="col-md-6">
+        <label for="intenzitas" class="form-label">Edzés intenzitása:</label>
+        <input type="range" class="form-range" id="intenzitas" min="1" max="5" step="1" value="3" oninput="document.getElementById('intenzitas-ertek').textContent = this.value;">
+        <div>
+          <span>1</span>
+          <span class="mx-2">|</span>
+          <span>2</span>
+          <span class="mx-2">|</span>
+          <span>3</span>
+          <span class="mx-2">|</span>
+          <span>4</span>
+          <span class="mx-2">|</span>
+          <span>5</span>
+          <span class="ms-3">Kiválasztott: <span id="intenzitas-ertek">3</span></span>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <label for="tevekenyseg" class="form-label">Tevékenység:</label>
+        <input type="text" class="form-control" id="tevekenyseg" placeholder="például: futás">
+      </div>
+
       <div class="col-12">
         <button type="button" class="btn btn-primary" id="kovetkezo-nap">Következő nap</button>
       </div>
@@ -82,6 +104,6 @@
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="src/ts/main.ts"></script>
+  <script src="src/ts/main.js"></script>
 </body>
 </html>

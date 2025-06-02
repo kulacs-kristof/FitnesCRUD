@@ -3,6 +3,8 @@ export class FitnessNap {
   elegetettKaloria: number;
   edzesHossz: number;
   pihenoNap: boolean;
+  tevekenysegNev: string = "";
+  edzesIntenzitasErtek: number = 3; // ÚJ mező, alapértelmezett 3
 
   constructor(napNeve: string) {
     this.napNeve = napNeve;
@@ -12,11 +14,8 @@ export class FitnessNap {
   }
 
   edzesIntenzitas(): string {
-    if (this.pihenoNap || this.edzesHossz === 0) return "-";
-    const intenzitas = this.elegetettKaloria / this.edzesHossz;
-    if (intenzitas < 5) return "Alacsony";
-    if (intenzitas < 10) return "Közepes";
-    return "Magas";
+    if (this.pihenoNap) return "-";
+    return this.edzesIntenzitasErtek.toString();
   }
 
   tevekenyseg(): string {
